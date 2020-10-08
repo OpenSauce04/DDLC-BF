@@ -1,6 +1,8 @@
 import init
 import glob
 from functions.printchar import printchar
-from functions.printline import printline
-printline("Hello world!")
+from functions.printtext import printtext
+from functions.preimage import preimage
+
+preimage("resources/prerenderedImages/titlescreen.txt")
 print(glob.output)
