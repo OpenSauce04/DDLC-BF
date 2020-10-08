@@ -1,3 +1,4 @@
 from lib import asciify
+from functions.printtext import printtext
 def image(image):
-  asciify.runner(image)
+  printtext(asciify.runner(image))
