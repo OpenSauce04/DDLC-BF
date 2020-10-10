@@ -1,0 +1,2 @@
+mcname="MC"
+sayoriname="Sayori"

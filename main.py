@@ -7,6 +7,7 @@ from functions.writeraw import writeraw
 from functions.skipline import skipline
 from functions.dialogue import dialogue
 from functions.portrait import portrait
+from strings import *
 
 preimage("resources/prerenderedImages/configborder.txt")
 writeraw(",") # Wait for key press
@@ -22,9 +23,10 @@ dialogue("",'"We used to walk to school together on days like this, but starting
 dialogue("",'"But if she`s going to chase after me like this, I almost feel better off running away."')
 dialogue("",'"However, I just sigh and idle in front of the crosswalk and let Sayori catch up to me."')
 portrait("resources/images/portrait/sayori/sayoriUwu.png")
-dialogue("Sayori",'"Haaahhh...haaahhh..."')
-dialogue("Sayori",'"I overslept again!"')
-dialogue("Sayori",'"But I caught you this time!"')
+dialogue(sayoriname,'"Haaahhh...haaahhh..."')
+dialogue(sayoriname,'"I overslept again!"')
+dialogue(sayoriname),'"But I caught you this time!"')
+dialogue(mcname, '"Maybe, but only because I decided to stop and wait for you."')
 f = open("DDLC-BF.bf", "w")
 f.write(glob.output)
 f.close()
