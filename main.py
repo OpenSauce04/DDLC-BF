@@ -15,7 +15,7 @@ try:
 except:
   # previous file does not exist, continue
   True # Empty instruction to stop python from complaining
-
+print("Compiling to './DDLC-BF.bf'...")
 
 printtext(chr(27)+"[2J")
 preimage("resources/prerenderedImages/configborder.txt")
@@ -85,6 +85,21 @@ dialogue(sayoriname, '"Yaay~!"')
 dialogue("", '"Why do I let myself get lectured by such a carefree girl?"')
 dialogue("", '"More than that, I`m surprised I even let myself relent to her."')
 dialogue("", '"I guess seeing her worry so much about me makes me want to ease her mind at least a little bit - even if she does exaggerate everything inside of her head."')
+preimage("resources/prerenderedImages/black.txt")
+image("resources/images/bg/class.png")
+dialogue("", '"The school day is as ordinary as ever, and it`s over before I know it."')
+dialogue("", '"After I pack up my things, I stare blankly at the wall, looking for an ounce of motivation."')
+dialogue(mcname, '"Clubs..."')
+dialogue("", '"Sayori wants me to check out some clubs."')
+dialogue("", '"I guess I have no choice but to start with the anime club..."')
+dialogue(sayoriname, '"Hellooo?"')
+image("resources/images/bg/class.png")
+portrait("resources/images/portrait/sayori/sayori3.png")
+dialogue(mcname, '"Sayori...?"')
+dialogue("", '"Sayori must have come into the classroom while I was spacing out."')
+dialogue("", '"I look around and realize that I`m the only one left in the classroom."')
 
 flushcode()
 glob.f.close()
+
+print("done.")
