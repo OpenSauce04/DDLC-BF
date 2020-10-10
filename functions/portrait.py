@@ -2,6 +2,7 @@ from lib import asciify
 from functions.printchar import printchar
 from functions.printtext import printtext
 from functions.writeraw import writeraw
+from functions.flushcode import flushcode
 import glob
 import os.path
 def portrait(imagepath):
@@ -18,3 +19,4 @@ def portrait(imagepath):
       printchar(image[x])
     if (x==138):
       printtext(chr(27)+"E")
+  flushcode()

@@ -3,4 +3,5 @@ reference/
 __pycache__/
 img.txt
 DDLC-BF.bf
-bf.py
+interpreter/
+*.pyc

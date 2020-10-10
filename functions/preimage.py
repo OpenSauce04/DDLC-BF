@@ -1,4 +1,5 @@
 from functions.printtext import printtext
+from functions.flushcode import flushcode
 import os.path
 def preimage(path):
   if not os.path.exists(path):
@@ -7,3 +8,4 @@ def preimage(path):
   printtext(chr(27)+"[f")
   printtext(f.read())
   f.close
+  flushcode()
