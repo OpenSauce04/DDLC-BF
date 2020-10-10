@@ -14,7 +14,9 @@ try:
   open('DDLC-BF.bf', 'w').close() #wipe code
 except:
   # previous file does not exist, continue
-  True
+  True # Empty instruction to stop python from complaining
+
+
 printtext(chr(27)+"[2J")
 preimage("resources/prerenderedImages/configborder.txt")
 writeraw(",") # Wait for key press
@@ -45,7 +47,26 @@ portrait("resources/images/portrait/sayori/sayori3.png")
 dialogue(sayoriname, '"Fine, fine."')
 dialogue(sayoriname, '"But you did wait for me, after all."')
 dialogue(sayoriname, '"I guess you don`t have it in you to be mean even if you want to~"')
-dialogue(mcname, "Whatever you say, Sayori...")
+dialogue(mcname, '"Whatever you say, Sayori..."')
+image("resources/images/bg/house.png")
+portrait("resources/images/portrait/sayori/sayori4.png")
+dialogue(sayoriname, '"Ehehe~"')
+image("resources/images/bg/house.png")
+dialogue("", '"We cross the street together and make our way to school."')
+dialogue("", '"As we draw near, the streets become increasingly speckled with other students making their daily commute."')
+portrait("resources/images/portrait/sayori/sayori5.png")
+dialogue(sayoriname, '"By the way, '+mcname+'..."')
+dialogue(sayoriname, '"Have you decided on a club to join yet?"')
+dialogue(mcname, '"A club?"')
+dialogue(mcname, '"I told you already, I`m really not interested in joining any clubs.')
+dialogue(mcname, '"I haven`t been looking, either."')
+image("resources/images/bg/house.png")
+portrait("resources/images/portrait/sayori/sayori6.png")
+dialogue(sayoriname, '"Eh? That`s not true!"')
+dialogue(sayoriname, '"You told me you would join a club this year!"')
+dialogue(mcname, '"Did I...?"')
+dialogue("", '"I`m sure it`s possible that I did, in one of our many conversations where I dismissively go along with whatever she`s going on about."')
+dialogue("", '"Sayori likes to worry a little too much about me, when I`m perfectly content just getting by on the average while spending my free time on games and anime."')
 
 flushcode()
 glob.f.close()

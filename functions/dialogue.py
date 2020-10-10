@@ -10,8 +10,9 @@ def cleardialogue():
 def dialogue(speaking, text):
   cleardialogue()
   printtext(chr(27)+"[43;0H")
-  printline('+'+('-'*(len(speaking)+2))+'+')
-  printline("| "+speaking+" |")
+  if not (speaking==""):
+    printline('+'+('-'*(len(speaking)+2))+'+')
+    printline("| "+speaking+" |")
   printline('+'+('-'*148)+'+')
   printtext(text)
   writeraw(">,[-]<")
