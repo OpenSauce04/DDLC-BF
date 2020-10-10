@@ -3,7 +3,7 @@ from functions.printtext import printtext
 from functions.writeraw import writeraw
 from functions.clearline import clearline
 def cleardialogue():
-  for x in range(0,5):
+  for x in range(0,6):
     printtext(chr(27)+"[4"+str(3+x)+";0H")
     clearline()
 
