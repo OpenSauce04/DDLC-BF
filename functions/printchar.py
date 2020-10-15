@@ -1,10 +1,12 @@
+from os import write
+from functions.writeraw import writeraw;
 import glob;
 def printchar(input):
   while (ord(input) != glob.bitcounter):
     if (ord(input)>glob.bitcounter):
-      glob.output+="+"
+      writeraw("+")
       glob.bitcounter+=1
     else:
-      glob.output+="-"
+      writeraw("-")
       glob.bitcounter-=1
-  glob.output+="."
+  writeraw(".")
