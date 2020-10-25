@@ -1,0 +1,2 @@
+language = "python3"
+run = "echo Loading... && python3 main.py > /dev/null && cd interpreter && go build -o machine && ./machine ../DDLC-BF.bf"
