@@ -1,5 +1,6 @@
 .vscode/
-reference/
+reference/image
+reference/text
 __pycache__/
 img.txt
 DDLC-BF.bf

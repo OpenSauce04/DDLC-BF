@@ -1,0 +1,4 @@
+sayori=680px
+yuri=700px
+natsuki=660px
+monika=695px
