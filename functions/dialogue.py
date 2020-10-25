@@ -5,12 +5,14 @@ from functions.writeraw import writeraw
 from functions.clearline import clearline
 from functions.skipline import skipline
 from functions.linecorrect import linecorrect
+from functions.debug import debug
 def cleardialogue():
   for x in range(0,6):
     printtext(chr(27)+"[4"+str(3+x)+";0H")
     clearline()
 
 def dialogue(speaking, text):
+  debug(3, "Writing dialogue for "+speaking+": '"+text+"'")
   cleardialogue()
   printtext(chr(27)+"[43;0H")
   if not (speaking==""):

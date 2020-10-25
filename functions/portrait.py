@@ -4,9 +4,11 @@ from functions.printtext import printtext
 from functions.writeraw import writeraw
 from functions.flushcode import flushcode
 from functions.storechar import storechar
+from functions.debug import debug
 import glob
 import os.path
 def portrait(imagepath):
+  debug(3, "Writing portrait image at '"+imagepath+"'")
   if not os.path.exists(imagepath):
     print("ERROR: file not found: "+imagepath)
   image=asciify.runner(imagepath)
