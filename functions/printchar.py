@@ -1,6 +1,6 @@
 from os import write
-from functions.writeraw import writeraw;
-import glob;
+from functions.writeraw import writeraw
+import glob
 def printchar(input):
   while (ord(input) != glob.bitcounter):
     if (ord(input)>glob.bitcounter):

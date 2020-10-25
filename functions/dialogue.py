@@ -1,5 +1,6 @@
 from functions.printline import printline
 from functions.printtext import printtext
+from functions.printtextdelay import printtextdelay
 from functions.writeraw import writeraw
 from functions.clearline import clearline
 from functions.skipline import skipline
@@ -18,5 +19,5 @@ def dialogue(speaking, text):
     skipline(2)
 
   printline('+'+('-'*148)+'+')
-  printtext(text)
+  printtextdelay(text)
   writeraw(">,[-]<")
