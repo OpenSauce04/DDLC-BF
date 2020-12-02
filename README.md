@@ -1,5 +1,5 @@
 # DDLC-BF
-[![Run on Repl.it](https://repl.it/badge/github/OpenSauce04/DDLC-BF)](https://DDLC-BF.opensauce04.repl.run/)
+[![Run on Repl.it](https://repl.it/badge/github/OpenSauce04/DDLC-BF)](https://repl.it/@OpenSauce04/DDLC-BF)
 
 An attempt to port Doki Doki Literature Club into Brainfuck
 
